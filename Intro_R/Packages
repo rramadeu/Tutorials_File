@@ -1,0 +1,18 @@
+library(adegenet)
+library(poppr)
+library(hierfstat)
+library (diveRsity)
+library(vegan)
+library(ape)
+library(ade4)
+library (pegas)
+library (ggplot2)
+library(qvalues)
+library(locfit)
+library(edgeR)
+library(goseq)
+library(VariantAnnotation)
+
+#Libraries:
+#libxml2-dev
+#libcurl4-openssl-devW
