@@ -1,16 +1,34 @@
-##
+###############################
+# "For and matrix operations" #
+# author: "Rodrigo Amadeu"    #
+# date: "May 23th, 2016"      #
+# rramadeu@gmail.com          #
+###############################
+
+## In order to build a data.frame matching MAPMAKER standards
+## we need to make the following convertion: everything which 
+## is 1 turns "H" and everything which is 0 turns "A". 
+## We can do it by several features, here we present 2 looping 
+## ways and 1 matricial way.
 
 
-library(gsheet)
-mouse <- gsheet2tbl('https://docs.google.com/spreadsheets/d/1fLB4LRhfcl9hWYRorzsogQ9MJXrOWxcFJ5pqUXhI83E')
-mouse <- as.data.frame(mouse)
-head(mouse)
+df <- data.frame(IND=seq(1:100),
+                 TRAIT=round(rnorm(100,50,10),0),
+                 M1=sample(0:1,100,replace=TRUE),
+                 M2=sample(0:1,100,replace=TRUE),
+                 M3=sample(0:1,100,replace=TRUE),
+                 M4=sample(0:1,100,replace=TRUE),
+                 M5=sample(0:1,100,replace=TRUE),
+                 M6=sample(0:1,100,replace=TRUE),
+                 M7=sample(0:1,100,replace=TRUE),
+                 M8=sample(0:1,100,replace=TRUE))
 
-## In order to build a data.frame matching MAPMAKER stander, we need to make the following convertion: everything which is 1 turns "H" and everything which is 0 turns "A". We can do it by several features, here we present 2 looping ways and 1 matricial way.
+
 
 ## Selecting just the marker matrix
-marker.matrix <- mouse[,c(3:16)]
+marker.matrix <- df[,c(3:10)]
 head(marker.matrix)
+
 
 ## catches how many columns and rows our matrix (hereafter mm) has.
 col.mm <- ncol(marker.matrix)
