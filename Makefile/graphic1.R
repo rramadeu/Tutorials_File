@@ -11,8 +11,10 @@ library(tidyr)
 data1 <- read.csv("mouse.csv")
 
 data2 <- data1 %>%
-  gather(IND, BW, starts_with('M'))   
-colnames(data2) <- c("ID", "Phenotype", "Markers", "Genotype")
+  select(IND, BW, starts_with('M')) %>%
+  pivot_longer(starts_with('M'), names_to = "Markers", values_to = "Genotype") %>%
+  rename(ID = "IND",
+         Phenotype = "BW")
 
 jpeg("Figures/graphic1.jpeg")
 
