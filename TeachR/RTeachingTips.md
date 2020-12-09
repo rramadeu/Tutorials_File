@@ -86,9 +86,9 @@ functions has the `data` argument, use them.
 
 If you are loading a data sheet, before load it, open in Excel and show
 it to your students. Navigate in it, explain the variables. Prefer
-standard `csv` formats. Then, load the sheet in R, check the `str()`
-function and double-check if you loaded correct with your students,
-convert to factor what is necessary, and give the `str()` again.
+standard `csv` formats. Then, load the sheet in R, check it with `str()`
+function and double-check if you correctly loaded it with your students,
+convert to factor what is necessary, and show `str()` again.
 
 ## Don’t use obscure/low-used packages
 
