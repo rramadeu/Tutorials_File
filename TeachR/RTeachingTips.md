@@ -2,12 +2,12 @@ Tips to teach R in workshops or practical classes for new R learners
 ================
 
 I’ve being leading R classes for agricultural and genetic data analysis
-since 2014. By troubleshooting students codes and watch their learning
-process I created a set of personal rules on how to assemble a effective
+since 2014. By troubleshooting students codes and watching their learning
+process I created a set of personal rules on how to assemble an effective
 R script and class for the students. Keep in mind, the scripts you use
 for teaching are completely different from the scripts you use for your
-own analysis. My students have some knowledge on basic R commands but
-their are usually from a Biology oriented major. So, no formal
+own analysis. My students have some basic knowledge of R commands but
+they are usually from a Biology oriented major. So, no formal
 programming, stats, and logic courses in their background.
 
 Key rules: avoid unnecessary codes/packages, use simple codes, use
@@ -19,7 +19,7 @@ simple comments, don’t show off.
 
 Rmarkdowns outputs (html, pdf, word) are pretty for self-learning, for a
 companion material, for a blog post, for a tutorial etc. But they are
-NOT for teaching face-to-face. Using an html or pdf with R code requires
+NOT good for teaching face-to-face. Using an html or pdf with R code requires
 the students unnecessary work with searching the correct code and
 copy/paste. It might sounds easy for you that created the material, but
 often will imply troubleshooting and problems for the student (and also
@@ -105,6 +105,7 @@ them in multiple OS and commonly used R versions.
 Split it in multiple lines
 
 ## Go easy on the `apply` family and vectorial manipulation
+
 Explain what your `apply` function is doing. R is supposed to be a vectorial language,
 but your student probably don't know this, keep that in mind.
 
@@ -118,3 +119,35 @@ operations. If you don’t have an easy alternative to do in R but it is
 really easy to do in Excel, do it there and reload your data. Often
 there will be an student thinking “Oh, that is so easy in Excel why he
 is doing it here? This is silly”.
+
+## Use simplified data and analysis
+
+Your students have a common computer. The common undergrad student's computer 
+has 4 to 8 GB or RAM, one google chrome open with 20 tabs, Skype or MS Teams running. 
+RStudio per se can consude 500 MB, so this means that you have at most 1 GB to use 
+in your R application. You don't want your student to have frozen computers and they 
+rebooting during your class.
+
+Another issue is time of the analysis. Try to fit a model with a large data in a commonn computer 
+can take the whole class period. So, simplify your data and analysis, reduce its size, reduce the model complexity.
+This brings back to the notion of internet speed in the classroom, one day in a workshop the instructor required the
+students to download a data set of 2 GBs, the internet speed was terrible and some users even didn't have access. The solution was
+a slow flash drive going in each computer. I got my data only at the end of the workshop it was a disaster.
+
+If your data and analysis involved data with more than 1,000 lines and/or columns, you should do a benchmark of this analysis before
+the class. If requires more than 1GB of RAM, you need to simplified it to avoid snorting audience. If you really need to use big data, 
+give access to a cluster and make sure they do have access and know how to use it, but this can be real troublesome for certain classes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
