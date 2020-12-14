@@ -154,11 +154,10 @@ course showing R advantages. For example, amazing graphics built,
 collaborative works with big data, and the huge amount of packages
 available for specifics study areas. Then, you can motivate them to use
 R without turning them more frustrated.
-Introductory R for you can be very easy, but understand that it is easy
-for you because you already learned it. For the students, it can be very difficult
-and it would not be very nice listening from someone how the thing you are
-suffering to do is easy/unchallenging. Then, NEVER say that something is
-very easy to do. Instead, show them the learning curve for programming,
+Never say that something is very easy to do. Understand that it can be easy
+just for you because you already learned it. For the students, it can be very difficult.
+It would not be very nice listening from someone how the thing you are
+struggling to do is easy/unchallenging. Instead, show them the learning curve for programming,
 and highlight the most common mistakes made for each new concept taught.
 For example, it is very common that beginners forget to include the "c"
 function to create vectors or include dots instead of commas to separate
